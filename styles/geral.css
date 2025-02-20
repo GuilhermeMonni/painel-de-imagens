@@ -1,0 +1,15 @@
+@import './style-main.css';
+@import './style-modal.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --cor-fundo-main: #000000;
+    --cor-fundo: #63728a6f; 
+    --cor-borda: #3246632f;
+    --cor-font: #d4dffa; 
+    --cor-btn: #2c4f7c;
+    --fonte-titulo: "Montserrat", serif;
+    --fonte-texto: "Atkinson Hyperlegible Next", serif;
+}
