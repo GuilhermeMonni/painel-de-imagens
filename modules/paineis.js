@@ -34,7 +34,7 @@ export default function painel(){
     function mouseEvent(e){ //funcao para o mouse
         if(!this.img){  //verifica e add a img junto ao elemento
             this.img = document.createElement('img')
-            this.img.setAttribute('src', '../imgs/btn-adicionar.png')
+            this.img.src = '../imgs/btn-adicionar.png'
             this.img.classList.add('img-adicionar')
             this.appendChild(this.img)
         }
