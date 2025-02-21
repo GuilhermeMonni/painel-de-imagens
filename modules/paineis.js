@@ -36,7 +36,7 @@ export default function painel(){
             this.img = document.createElement('img')
             this.img.src = '../imgs/btn-adicionar.png'
             this.img.classList.add('img-adicionar')
-            this.appendChild(this.img)
+            this.appendChild(this.img.getAttribute)
         }
     
         if(e.type == 'mouseover'){  //add imagem quando o mouse entra
