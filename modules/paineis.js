@@ -33,17 +33,17 @@ export default function painel(){
 
     function mouseEvent(e){ //funcao para o mouse
         if(!this.img){  //verifica e add a img junto ao elemento
-            this.img = document.createElement('img')
-            this.img.src = '../imgs/btn-adicionar.png'
-            this.img.classList.add('img-adicionar')
-            this.appendChild(this.img.getAttribute)
+            this.imgAdd = document.createElement('img')
+            this.imgAdd.src = '../imgs/btn-adicionar.png'
+            this.imgAdd.classList.add('img-adicionar')
+            this.appendChild(this.imgAdd)
         }
     
         if(e.type == 'mouseover'){  //add imagem quando o mouse entra
-            this.img.style.display = 'block'
+            this.imgAdd.style.display = 'block'
         }else if(e.type == 'mouseout'){ //tira img quando mouse sai    
             if(!this.contains(e.relatedTarget)){
-                this.img.style.display = 'none'
+                this.imgAdd.style.display = 'none'
             }
         }
     }
