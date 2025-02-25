@@ -29,24 +29,27 @@ export default function painel(){
             }
         })
 
-    })
-
-    function mouseEvent(e){ //funcao para o mouse
-        if(!this.imgAdd){  //verifica e add a img junto ao elemento
-            this.imgAdd = document.createElement('img')
-            this.imgAdd.setAttribute('src', '/painel-de-imagens/imgs/btn-adicionar.png')
-            this.imgAdd.classList.add('img-adicionar')
-            this.appendChild(this.imgAdd)
-        }
+        function mouseEvent(e){ //funcao para o mouse
+            if(!this.imgAdd){  //verifica e add a img junto ao elemento
+                this.imgAdd = document.createElement('img')
     
-        if(e.type == 'mouseover'){  //add imagem quando o mouse entra
-            this.imgAdd.style.display = 'block'
-        }else if(e.type == 'mouseout'){ //tira img quando mouse sai    
-            if(!this.contains(e.relatedTarget)){
-                this.imgAdd.style.display = 'none'
+                this.imgAdd.setAttribute('src', '/painel-de-imagens/imgs/btn-adicionar.png')
+                this.imgAdd.classList.add('img-adicionar')
+                this.appendChild(this.imgAdd)
+                this.imgAdd.addEventListener('click', () => {
+                    inputFile.click()
+                })
+            }
+        
+            if(e.type == 'mouseover'){  //add imagem quando o mouse entra
+                this.imgAdd.style.display = 'block'
+            }else if(e.type == 'mouseout'){ //tira img quando mouse sai    
+                if(!this.contains(e.relatedTarget)){
+                    this.imgAdd.style.display = 'none'
+                }
             }
         }
-    }
+    })
 }
 
 

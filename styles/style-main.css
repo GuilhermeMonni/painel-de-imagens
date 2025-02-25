@@ -11,7 +11,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(3px);
 }
 
 .paineis{
@@ -63,6 +63,9 @@ body{
     left: 50%;
     transition-duration: .8s;
     transform: translate(-50%, -50%);
+}
+.img-adicionar:hover{
+    scale: 1.02;
 }
 
 @keyframes btn-adicionar{
