@@ -18,6 +18,8 @@ Este é um website simples com a ideia de um painel animado, que possibilita o u
 # Observações
 O projeto está em desenvolvimento.
 
+Responsividade está sendo ajustada.
+
 O site foi criado com o intuito de praticar.
 
 Sinta-se à vontade para abrir um issue no repositório caso tenha alguma sugestão.
