@@ -1,3 +1,5 @@
+import responsividade from './responsividade.js'
+
 export default function modal(){
   const modalDiv = criarDiv() //cria modal principal
   const elementModal = criarDiv() //cria modal com texto
@@ -25,6 +27,8 @@ export default function modal(){
       elementModal.style.display = 'none'
     }
   }
+
+  responsividade(elementModal, btn)
 }
 
 function criarDiv(){ //funcao que cria uma div
