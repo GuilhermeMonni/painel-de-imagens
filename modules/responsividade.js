@@ -25,6 +25,7 @@ export function responsividadePaineis(){ //responsividade paineis da pag
     function paineisResponsivos(e){
         if(e.matches){  // se for mobile
             painel.style.gridTemplateColumns = '80%'
+            painel.style.objectFit = 'scale-down';
             body.style.backgroundRepeat = 'repeat'
             body.style.margin = '0 auto 100%'
         } 
