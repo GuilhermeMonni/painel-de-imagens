@@ -43,6 +43,7 @@ body{
 [data-painel] img {
     max-width: 100%; 
     max-height: 100%; 
+    object-fit: scale-down;
 }
 .imagem-adicionada:hover, [data-painel]:hover{
     scale: 1.004;
