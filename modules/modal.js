@@ -1,4 +1,4 @@
-import responsividade from './responsividade.js'
+import { responsividadeModal } from './responsividade.js'
 
 export default function modal(){
   const modalDiv = criarDiv() //cria modal principal
@@ -28,7 +28,7 @@ export default function modal(){
     }
   }
 
-  responsividade(elementModal, btn)
+  responsividadeModal(elementModal, btn, modalDiv)
 }
 
 function criarDiv(){ //funcao que cria uma div

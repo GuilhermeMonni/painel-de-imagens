@@ -1,3 +1,5 @@
+import { responsividadePaineis } from "./responsividade.js"
+
 export default function painel(){
     const paineis = document.querySelectorAll('[data-painel]') //paineis da pag
 
@@ -50,6 +52,8 @@ export default function painel(){
             }
         }
     })
+
+    responsividadePaineis()
 }
 
 
